@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/copy.png</file>
+        <file>images/cut.png</file>
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+        <file>images/save.png</file>
+        <file>images/hint.png</file>
+        <file>images/ai-bottom-no.png</file>
+        <file>images/ai-bottom-yes.png</file>
+        <file>images/ai-top-no.png</file>
+        <file>images/ai-top-yes.png</file>
+        <file>images/swap-no.png</file>
+        <file>images/swap-yes.png</file>
+        <file>images/chess_board/chessboard.bmp</file>
+        <file>images/chess_man/black_che.bmp</file>
+        <file>images/chess_man/black_horse.bmp</file>
+        <file>images/chess_man/black_jiang.bmp</file>
+        <file>images/chess_man/black_pao.bmp</file>
+        <file>images/chess_man/black_shi.bmp</file>
+        <file>images/chess_man/black_xiang.bmp</file>
+        <file>images/chess_man/black_zu.bmp</file>
+        <file>images/chess_man/red_bing.bmp</file>
+        <file>images/chess_man/red_che.bmp</file>
+        <file>images/chess_man/red_horse.bmp</file>
+        <file>images/chess_man/red_pao.bmp</file>
+        <file>images/chess_man/red_shi.bmp</file>
+        <file>images/chess_man/red_shuai.bmp</file>
+        <file>images/chess_man/red_xiang.bmp</file>
+        <file>images/chess_man/SELECTED.BMP</file>
+        <file>images/export_board.png</file>
+    </qresource>
+</RCC>

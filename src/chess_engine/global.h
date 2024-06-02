@@ -1,4 +1,4 @@
-#pragma once																		///<	防止重复引用机制
+﻿#pragma once																		///<	防止重复引用机制
 
 #include<vector>																	///<	顺序表容器
 #include<iostream>																	///<	输入输出流

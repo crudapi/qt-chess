@@ -1,4 +1,4 @@
-#include <fstream>
+﻿#include <fstream>
 #include <array>
 #include <cassert>
 #include "chess_ui_helper.h"
@@ -61,7 +61,7 @@ std::pair<bool, std::string> CchessUI::CanMoveFrom(QPoint point) const
     {
         return std::make_pair(true, "");
     }
-    return std::make_pair(false, "走法违规！");
+    return std::make_pair(false, "invalid step");
 }
 std::pair<bool, std::wstring> CchessUI::CanMoveTo(QPoint point) const
 {
@@ -75,11 +75,11 @@ std::pair<bool, std::wstring> CchessUI::CanMoveTo(QPoint point) const
     bool canMoveTo = m_chessObject->IsUserCanMoveTo(OneStep(positionFrom, positionTarget, idTarget));
     if ( checkFrom && checkTo && canMoveTo /*&& !isSameSideBetweenFromAndTarget*/)
 	{
-			return std::make_pair(true, L"可以到达那里！");
+            return std::make_pair(true, L"you can go there");
 	}
 	else
 	{
-		return std::make_pair(false, L"走法违规！");
+        return std::make_pair(false, L"invalid step");
 	}
 }
 OneStep CchessUI::GoAhead(const OneStep& m)

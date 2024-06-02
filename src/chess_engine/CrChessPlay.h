@@ -1,16 +1,16 @@
-#pragma once
+﻿#pragma once
 
 #include <cassert>
 #include <fstream>
-#include"../chess_engine/chessbase.h"
-#include"../chess_engine/cannon.h"
-#include"../chess_engine/chariot.h"
-#include"../chess_engine/horse.h"
-#include"../chess_engine/king.h"
-#include"../chess_engine/minister.h"
-#include"../chess_engine/official.h"
-#include"../chess_engine/soldier.h"
-#include"../chess_engine/global.h"
+#include"chessbase.h"
+#include"cannon.h"
+#include"chariot.h"
+#include"horse.h"
+#include"king.h"
+#include"minister.h"
+#include"official.h"
+#include"soldier.h"
+#include"global.h"
 
 /*
 作者：QQ3508551694

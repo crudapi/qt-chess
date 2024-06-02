@@ -1,4 +1,4 @@
-#include "CrChessPlay.h"
+﻿#include "CrChessPlay.h"
 
 #include<algorithm>
 #include <cassert>
@@ -99,67 +99,67 @@ void CChessPlay::InitChessPlay(void)
 	//构造两个车
 	g_global.g_chessman[39]->SetLocation(Coordinate(3,3));
 	g_global.g_chessman[40]->SetLocation(Coordinate(3,11));
-	g_global.g_chessmanName[39] = g_global.g_chessmanName[40] = "車";
+//	g_global.g_chessmanName[39] = g_global.g_chessmanName[40] = "車";
 	//构造两个马
 	g_global.g_chessman[37]->SetLocation(Coordinate(3,4));
 	g_global.g_chessman[38]->SetLocation(Coordinate(3,10));
-	g_global.g_chessmanName[37] = g_global.g_chessmanName[38] = "馬";
+//	g_global.g_chessmanName[37] = g_global.g_chessmanName[38] = "馬";
 	////构造两个炮
 	g_global.g_chessman[41]->SetLocation(Coordinate(5,4));
 	g_global.g_chessman[42]->SetLocation(Coordinate(5,10));
-	g_global.g_chessmanName[41] = g_global.g_chessmanName[42] = "砲";
+//	g_global.g_chessmanName[41] = g_global.g_chessmanName[42] = "砲";
 	//构造将
 	g_global.g_chessman[32]->SetLocation(Coordinate(3,7));
-	g_global.g_chessmanName[32] = "帥";
+//	g_global.g_chessmanName[32] = "帥";
 	//构造两个士
 	g_global.g_chessman[33]->SetLocation(Coordinate(3,6));
 	g_global.g_chessman[34]->SetLocation(Coordinate(3,8));
-	g_global.g_chessmanName[33] = g_global.g_chessmanName[34] = "仕";
+//	g_global.g_chessmanName[33] = g_global.g_chessmanName[34] = "仕";
 	//构造两个相
 	g_global.g_chessman[35]->SetLocation(Coordinate(3,5));
 	g_global.g_chessman[36]->SetLocation(Coordinate(3,9));
-	g_global.g_chessmanName[35] = g_global.g_chessmanName[36] = "相";
+//	g_global.g_chessmanName[35] = g_global.g_chessmanName[36] = "相";
 	//构造五个兵
 	g_global.g_chessman[43]->SetLocation(Coordinate(6,3 ));
 	g_global.g_chessman[44]->SetLocation(Coordinate(6,5 ));
 	g_global.g_chessman[45]->SetLocation(Coordinate(6,7 ));
 	g_global.g_chessman[46]->SetLocation(Coordinate(6,9 ));
 	g_global.g_chessman[47]->SetLocation(Coordinate(6,11));
-	g_global.g_chessmanName[43] = g_global.g_chessmanName[44] 
-		= g_global.g_chessmanName[45] = g_global.g_chessmanName[46] = g_global.g_chessmanName[47] = "兵";
+//	g_global.g_chessmanName[43] = g_global.g_chessmanName[44]
+//		= g_global.g_chessmanName[45] = g_global.g_chessmanName[46] = g_global.g_chessmanName[47] = "兵";
 
 	//构造小号棋子，在棋盘下方
 	//构造将
 	g_global.g_chessman[16]->SetLocation(Coordinate(12,7));
-	g_global.g_chessmanName[16] = "将";
+//	g_global.g_chessmanName[16] = "将";
 	//构造两个士
 	g_global.g_chessman[17]->SetLocation(Coordinate(12,6));
 	g_global.g_chessman[18]->SetLocation(Coordinate(12,8));
-	g_global.g_chessmanName[17] = g_global.g_chessmanName[18] = "士";
+//	g_global.g_chessmanName[17] = g_global.g_chessmanName[18] = "士";
 	//构造两个相
 	g_global.g_chessman[19]->SetLocation(Coordinate(12,5));
 	g_global.g_chessman[20]->SetLocation(Coordinate(12,9));
-	g_global.g_chessmanName[19] = g_global.g_chessmanName[20] = "象";
+//	g_global.g_chessmanName[19] = g_global.g_chessmanName[20] = "象";
 	//构造两个马
 	g_global.g_chessman[21]->SetLocation(Coordinate(12,4));
 	g_global.g_chessman[22]->SetLocation(Coordinate(12,10));
-	g_global.g_chessmanName[21] = g_global.g_chessmanName[22] = "马";
+//	g_global.g_chessmanName[21] = g_global.g_chessmanName[22] = "马";
 	//构造两个车
 	g_global.g_chessman[23]->SetLocation(Coordinate(12,3));
 	g_global.g_chessman[24]->SetLocation(Coordinate(12,11));
-	g_global.g_chessmanName[23] = g_global.g_chessmanName[24] = "车";
+//	g_global.g_chessmanName[23] = g_global.g_chessmanName[24] = "车";
 	//构造两个炮
 	g_global.g_chessman[25]->SetLocation(Coordinate(10,4));
 	g_global.g_chessman[26]->SetLocation(Coordinate(10,10));
-	g_global.g_chessmanName[25] = g_global.g_chessmanName[26] = "炮";
+//	g_global.g_chessmanName[25] = g_global.g_chessmanName[26] = "炮";
 	////构造五个兵
 	g_global.g_chessman[27]->SetLocation(Coordinate(9,3 ));
 	g_global.g_chessman[28]->SetLocation(Coordinate(9,5 ));
 	g_global.g_chessman[29]->SetLocation(Coordinate(9,7 ));
 	g_global.g_chessman[30]->SetLocation(Coordinate(9,9 ));
 	g_global.g_chessman[31]->SetLocation(Coordinate(9,11));
-	g_global.g_chessmanName[27] = g_global.g_chessmanName[28]
-		= g_global.g_chessmanName[29] = g_global.g_chessmanName[30] = g_global.g_chessmanName[31] = "卒";
+//	g_global.g_chessmanName[27] = g_global.g_chessmanName[28]
+//		= g_global.g_chessmanName[29] = g_global.g_chessmanName[30] = g_global.g_chessmanName[31] = "卒";
 
 	//初始化bigManIds,smallManIds
 	g_global.InitChessManIDArray();

@@ -56,5 +56,5 @@ endif()
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(${PROJECT_NAME} PRIVATE chess_engine)
-target_link_libraries(${PROJECT_NAME} PRIVATE chess_play)
 target_link_libraries(${PROJECT_NAME} PRIVATE FEN)
+target_link_libraries(${PROJECT_NAME} PRIVATE cpplog)

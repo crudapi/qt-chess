@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include <QToolBar>
 #include <iostream>
@@ -212,9 +212,9 @@ void MainWindow::LoadChessManImage()
 void MainWindow::paintEvent(QPaintEvent*)
 {
     QPainter painter(this);
-    PaintChessboard(painter);//绘制棋盘
-    PaintChessman(painter);//绘制棋子
-    PaintSelected(painter);//绘制走棋位置
+    PaintChessboard(painter);
+	PaintChessman(painter);
+    PaintSelected(painter);
 }
 
 void MainWindow::PaintChessboard(QPainter& painter)
@@ -242,7 +242,8 @@ void MainWindow::PaintChessmanSelected(QPainter& painter, const QPoint& point)
 
     Coordinate position = UIPointToChessManCoordinate(point);
     auto centerPoint = ChessManCoordinateToUIPoint(position);
-    painter.drawPixmap(centerPoint, selectMask);
+    //draw pixmap
+
 }
 
 void MainWindow::PaintChessman(QPainter& painter)
@@ -386,8 +387,7 @@ void MainWindow::OnLButtonDown(QPoint point)
                 msgBox.exec();
             }
         }
-        else
-        {
+        else {
             //invalid goahead , can not go there
             SwitchStateTo(State::EMPTY);
         }
